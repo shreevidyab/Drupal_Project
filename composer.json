@@ -15,6 +15,8 @@
         }
     ],
     "require": {
+        "acquia/drupal-environment-detector": "^1",
+        "acquia/drupal-recommended-settings": "^1",
         "composer/installers": "^2.3",
         "drupal/core-composer-scaffold": "^11.4",
         "drupal/core-project-message": "^11.4",
@@ -37,7 +39,8 @@
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "php-http/discovery": true,
             "php-tuf/composer-integration": true,
-            "symfony/runtime": true
+            "symfony/runtime": true,
+            "acquia/drupal-recommended-settings": true
         },
         "sort-packages": true
     },

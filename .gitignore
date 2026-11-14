@@ -1,0 +1,29 @@
+cat > .gitignore << 'EOF'
+# Dependencies (rebuilt by composer install)
+/vendor/
+
+# Drupal core and contrib (installed by Composer)
+/docroot/core/
+/docroot/libraries/
+/docroot/modules/contrib/
+/docroot/themes/contrib/
+/docroot/profiles/contrib/
+/drush/contrib/
+
+# Environment-specific files
+/docroot/sites/*/settings.php
+/docroot/sites/*/settings.local.php
+/docroot/sites/*/services.yml
+/docroot/sites/*/files/
+/docroot/sites/simpletest/
+
+# Database dumps and backups
+*.sql
+*.sql.gz
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+EOF
